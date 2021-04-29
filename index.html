@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Прогноз погоды по API</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <style>
+    body {
+    background-image: url(./img/1.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover;}
+    /* #myModal {
+    width: 298px; height: 218px;
+    padding: 18px 9px;
+    border-radius: 4px;
+    background: #fafafa;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    display: none;
+    opacity: 0;
+    z-index: 38;
+    text-align: center;}
+    #myModal #myModal__close {
+    width: 21px; height: 21px;
+    position: absolute;
+    font-size: 29px;
+    top: 1px; right: 11px;
+    cursor: pointer;
+    display: block;}
+    #myOverlay {
+    z-index: 37;
+    position: fixed;
+    background: rgba(0,0,0,.7);
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    cursor: pointer;
+    display: none;} */
+  </style>
+
+  <!-- <div id="myModal">
+    <p>Контент</p>
+    <span id="myModal__close" class="close">ₓ</span>
+  </div> -->
+  <!-- <div id="myOverlay"></div> -->
+  <header>
+    <h1 style="margin-left: 30%; margin-right: 30%; text-align: center;">ПРОГНОЗ ПОГОДЫ</h1>
+  </header>
+  <script src="./main.js"></script>
+  <div style="margin-left: 30%; margin-right: 30%; text-align: center;">
+    <!-- <a style="text-align: center; margin-left: 30%; margin-right: 30%;" href="#">Анкор_ссылки</a> -->
+    <form name="form" action="./main.js">
+      <a>Выберите город:</a>
+      <select id="123" onchange="getValue();">
+        <option value="Moscow">Москва</option>
+        <option value="Sankt-Peterburg">Санкт-Петербург</option>
+        <option value="Cheboksary">Чебоксары</option>
+        <option value="Yoshkar-Ola">Йошкар-Ола</option>
+        <option value="Kazan">Казань</option>
+        <option>И так далее...</option>
+      </select>
+    </form>
+    <h2 class='city'></h2>
+    <h3 class='temp'></h3>
+    <h3 class='feels_like'></h3>
+
+  </div>
+</body>
+</html>
